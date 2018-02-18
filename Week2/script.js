@@ -51,7 +51,29 @@ function renderRepositoryClick(data) {
         const li = createAndAppend("li", ul);
         const a = createAndAppend("a", li, data.html_url);
         a.setAttribute("href", data.html_url);
+    a.setAttribute("target", "_blank");
+    const xhrCont = new XMLHttpRequest();
+    xhrCont.open("GET", data.contributors_url);
+    xhrCont.send();
+    xhrCont.responseType = "json";
+    xhrCont.onload = function () {
+        const output = xhrCont.response;
+        getContributors(output);
+    }
+}
+
+function getContributors(data) {
+    for (let i = 0; i < data.length; i++){
+        const ul = createAndAppend("ul", root);
+        const li = createAndAppend("li", ul);
+        // const p = createAndAppend("p", li, data.html_url);
+        const a = createAndAppend("a", li,"<hr><br>"+ data[i].login + "<br><br>");
+        a.setAttribute("href", data[i].html_url);
         a.setAttribute("target", "_blank");
+        const img = createAndAppend("img", li);
+        img.setAttribute("src", data[i].avatar_url);
+
+    }
 }
 
 
