@@ -2,7 +2,6 @@
 
 const url = "https://api.github.com/repos/HackYourFuture/";
 const currentLink = "https://api.github.com/users/";
-const repLink = "https://api.github.com/orgs/HackYourFuture/repos";
 
 const root = document.getElementById("root");
 
@@ -48,9 +47,9 @@ function repositoryClick() {
 function renderRepositoryClick(data) {
     const h1 = createAndAppend("h1", root, data.full_name);
     const ul = createAndAppend("ul", root);
-        const li = createAndAppend("li", ul);
-        const a = createAndAppend("a", li, data.html_url);
-        a.setAttribute("href", data.html_url);
+    const li = createAndAppend("li", ul);
+    const a = createAndAppend("a", li, data.html_url);
+    a.setAttribute("href", data.html_url);
     a.setAttribute("target", "_blank");
     const xhrCont = new XMLHttpRequest();
     xhrCont.open("GET", data.contributors_url);
@@ -66,7 +65,6 @@ function getContributors(data) {
     for (let i = 0; i < data.length; i++){
         const ul = createAndAppend("ul", root);
         const li = createAndAppend("li", ul);
-        // const p = createAndAppend("p", li, data.html_url);
         const a = createAndAppend("a", li,"<hr><br>"+ data[i].login + "<br><br>");
         a.setAttribute("href", data[i].html_url);
         a.setAttribute("target", "_blank");
@@ -96,6 +94,8 @@ function userClick() {
 
 // render user button click
 function renderUserClick(data) {
+    const img = createAndAppend("img", root);
+    img.setAttribute("src", data[0].owner.avatar_url);
     console.log("You clicked me!");
     for (let i = 0; i < data.length; i++){
         const h1 = createAndAppend("h1", root, data[i].name);
