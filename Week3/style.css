@@ -133,3 +133,11 @@ input{
         width:70%;
     }
 }
+@media only screen and (max-width:450px){
+    #repositoryName{
+        font-size: 1em;
+    }
+    #repositoryUrl{
+        font-size: 0.6em;
+    }
+}
