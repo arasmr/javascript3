@@ -1,0 +1,135 @@
+body{
+    margin:0 auto;
+    margin-top: 20px;
+    background-color: rgb(188, 213, 219);
+    width:100%;
+}
+/* HEADER */
+#header{
+    margin:0 auto;
+    text-align: center;
+    width:70%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.logo{
+    width:40%;
+}
+button{
+    width:45%;
+    height:50px;
+    background-color:transparent;
+    color:rgb(248, 246, 246);
+    box-sizing: border-box;
+    font-size:1em;
+    border:2px black solid;
+    margin:1px;
+}
+button:hover{
+    background-color: rgb(98, 123, 156);
+}
+input{
+    height:50px;
+    background-color: transparent;
+    border:2px black solid;
+    width:89.5%;
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+    font-size: 2em;
+    color:white;
+}
+/* CONTAINER */
+#container{
+    box-sizing: border-box;
+    background-color: rgb(160, 171, 172);
+    width:63%;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* CONTAINER FOR REPOSITORY CLICK */
+#repositoryName{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top:10px;
+}
+#contributorListLi{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    background-color: rgb(220, 224, 210);
+}
+#userLoginLink{
+    text-decoration: none;
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+#contributors{
+    color:white;
+    font-family: cursive;
+    font-size: 2em;
+    text-align:center;
+}
+#userAvatar{
+    width:20%;
+}
+#repositoryUrl{
+    text-decoration: none;
+    color:black;
+}
+/* CONTAINER FOR USER CLICK */
+#reposName{
+    text-align: left;
+    font-size:1.5em;font-size: 1.75em;
+    padding-left: 7%;
+    padding-right: 7%;
+    widows: 86%;
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    color:rgb(240, 90, 90);
+}
+#userLogo{
+    box-sizing: border-box;
+    border:1px lightcoral solid;
+    width:35%;
+    margin-top:10%;
+}
+#userName{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+#reposLink{
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media only screen and (max-width:896px){
+    button{
+        float: left;
+        width:100%;
+        font-size: 1em;
+    }
+    input{
+        font-size: 1em;
+        width:99%;
+    }
+    .logo{
+        width:45%;
+    }
+    #container{
+        margin-top:100px;
+    }
+    #repositoryName{
+        font-size: 1.5em;
+    }
+    #contributors{
+        font-size: 1.5em;
+    }
+    #userLoginLink{
+        font-size: 1.25em;
+    }
+    #container{
+        width:70%;
+    }
+}
