@@ -1,0 +1,44 @@
+
+body{
+    margin:0 auto;
+    margin-top: 50px;
+    background-color: rgb(155, 183, 219);
+    width:1200px;
+    height:300px;
+}
+
+img{
+    width:10%;
+} 
+
+#gitLogo{
+    width:30%;
+}
+#hyfLogo{
+    width:30%;
+}
+#container{
+    margin:0 auto;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+button{
+    width:70%;
+    height:50px;
+    background-color: beige;
+    color:red; 
+}
+input{
+    height:50px;
+    width:100%;
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+    font-size: 2em;
+}
+#reposName{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.5em;
+}
