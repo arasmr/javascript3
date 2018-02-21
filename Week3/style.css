@@ -92,8 +92,8 @@ input{
 #userLogo{
     box-sizing: border-box;
     border:1px lightcoral solid;
-    width:35%;
-    margin-top:10%;
+    width:45%;
+    margin-top:5%;
 }
 #userName{
     text-transform: uppercase;
@@ -139,5 +139,14 @@ input{
     }
     #repositoryUrl{
         font-size: 0.6em;
+    }
+    #reposLink{
+        font-size:0.6em;
+    }
+    #reposName{
+        font-size:1em;
+    }
+    #userName{
+        font-size: 1.2em;
     }
 }
